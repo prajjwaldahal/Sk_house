@@ -10,8 +10,8 @@ import { PasswordComponent } from './password/password.component';
 
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent },
-    { path: 'home', component: HomeComponent },
+    {path: '', redirectTo: '/home', pathMatch: 'full'},
+    { path: 'home', component:HomeComponent , pathMatch: 'full'},
     { path: 'login', component: LoginComponent },
     { path: 'dashboard', component: DashboardComponent },
     { path: 'update-room', component: RomupdateComponent },
