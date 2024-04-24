@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+}
+
+.container-fluid {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#sidebar {
+    height: 100%;
+}
+
+footer.footer {
+    margin-top: auto;
+}

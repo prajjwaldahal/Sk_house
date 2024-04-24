@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+  <app-dashcont></app-dashcont>
+        <!-- Main content -->
+        <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2">
+            <div>
+                <h1 class="h1"><br><br>Room Update</h1>
+                        <form class="container-fluid">
+                            
+                            <div class="mb-3">
+                                <label for="roomName" class="form-label">Room Name</label>
+                                <input type="text" class="form-control" id="roomName" placeholder="Enter room name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="roomType" class="form-label">Room Type</label>
+                                <select class="form-select" id="roomType">
+                                    <option selected>Select room type</option>
+                                    <option value="1">Single Room</option>
+                                    <option value="2">Double Room</option>
+                                    <option value="3">Suite</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="roomPrice" class="form-label">Room Price</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Rs.</span>
+                                    <input type="number" class="form-control" id="roomPrice" placeholder="Enter room price">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="roomDescription" class="form-label">Room Description</label>
+                                <textarea class="form-control" id="roomDescription" rows="3" placeholder="Enter room description"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="roomImage" class="form-label">Room Image</label>
+                                <input type="file" class="form-control" id="roomImage">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Room Details</button>
+                        </form>
+            </div>
+            
+        </div>
+       
+    </div>
+</div>

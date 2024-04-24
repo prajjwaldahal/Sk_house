@@ -1,0 +1,125 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <app-dashcont></app-dashcont>
+        </div>
+        <!-- Main content -->
+        <div class="col-md-9 col-lg-10 offset-md-3 offset-lg-2">
+            <div class="content-wrapper" style="min-height: 731.012px;">
+                <div class="content border-bottom mb-2">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-auto">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <h1 class="h1 m-0 pr-3 mr-3 border-right">Bookings</h1> 
+                                <br><br> 
+                                <div class="col-12 col-md-auto ml-md-auto">
+                                    <div class="btn-group">
+                                        <a href="http://127.0.0.1:8000/admin/hotel/booking/add/" class="btn btn-success">
+                                            <i class="fa fa-plus-circle"></i> Add booking
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <form id="changelist-search" class="form-inline" method="GET">
+                                    <div class="form-group mr-2">
+                                        <label for="hotel">Select hotel:</label>
+                                        <select id="hotel" class="form-control search-filter" style="width: 100%;">
+                                            <option value="">Select hotel</option>
+                                            <option value="1">Hotel A</option>
+                                            <option value="2">Hotel B</option>
+                                            <option value="3">Hotel C</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mr-2">
+                                        <label for="room-type"><br>Select room type:</label>
+                                        <select id="room-type" class="form-control search-filter" style="width: 100%;">
+                                            <option value="">Select room type</option>
+                                            <option value="1">Room Type A</option>
+                                            <option value="2">Room Type B</option>
+                                            <option value="3">Room Type C</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mr-2">
+                                        <label for="check-in-date"><br>Check-in date:</label>
+                                        <input id="check-in-date" class="form-control" type="date" name="check_in_date">
+                                    </div>
+                                    <div class="form-group mr-2">
+                                        <label for="check-out-date"><br>Check-out date:</label>
+                                        <input id="check-out-date" class="form-control" type="date" name="check_out_date">
+                                    </div>
+                                    <div class="form-group mr-2">
+                                        <label for="is-active"><br>Is active:</label>
+                                        <select id="is-active" class="form-control search-filter" style="width: 100%;">
+                                            <option value="">Is active</option>
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mr-2">
+                                        <label for="checked-in"><br>Checked in:</label>
+                                        <select id="checked-in" class="form-control search-filter" style="width: 100%;">
+                                            <option value=""><br>Checked in</option>
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mr-2">
+                                        <label for="checked-out"><br>Checked out:</label>
+                                        <select id="checked-out" class="form-control search-filter" style="width: 100%;">
+                                            <option value="">Checked out</option>
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <form id="changelist-form" method="post" novalidate="">
+                                    <!-- Additional form elements here -->
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="your_csrf_token_here">
+                                    <div class="module filtered" id="changelist">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="change-list-actions row pb-3">
+                                                    <div class="col-12">
+                                                        <!-- Other action buttons here -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div class="dataTables_info" role="status" aria-live="polite">0 bookings</div>
+                                            </div>
+                                        </div>
+                                        <!-- Table with booking details here -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
